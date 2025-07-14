@@ -212,13 +212,6 @@ MCP_SERVER_VERSION=1.0.0
 LOG_LEVEL=info
 ```
 
-## Development Tips
-
-1. **Hot Reloading**: Use `npm run dev:server` during development
-2. **Debugging**: Add `console.error()` statements (they won't interfere with MCP protocol)
-3. **Testing**: Use the included client or tools like `mcp-inspector`
-4. **Type Safety**: Leverage TypeScript's type system for robust implementations
-
 ## Advanced Usage
 
 ### Custom Transports
@@ -243,44 +236,8 @@ server.setRequestHandler(MyCustomRequestSchema, async (request) => {
 });
 ```
 
-## Troubleshooting
-
-### Common Issues
-
-1. **"Cannot find module" errors**: Run `npm install` and `npm run build`
-2. **Permission denied**: Ensure the server script is executable (`chmod +x build/server.js`)
-3. **Port conflicts**: Check if another process is using the same transport
-
-### Debugging
-
-Enable verbose logging by setting environment variables:
-
-```bash
-DEBUG=mcp:* npm run start:server
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
-
 ## Resources
 
 - [MCP Official Documentation](https://github.com/modelcontextprotocol)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [MCP SDK Reference](https://github.com/modelcontextprotocol/typescript-sdk)
-
-## Next Steps
-
-- Customize the tools and resources for your use case
-- Add persistent storage (database, file system)
-- Implement authentication and authorization
-- Add comprehensive testing
-- Deploy to production environment
