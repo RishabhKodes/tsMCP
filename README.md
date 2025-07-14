@@ -2,16 +2,6 @@
 
 A complete boilerplate for creating Model Context Protocol (MCP) servers and clients in TypeScript.
 
-## Features
-
-- 🚀 Full TypeScript implementation with proper typing
-- 🛠️ Ready-to-use MCP server with example tools and resources
-- 👥 Example MCP client for testing and integration
-- 📦 Modern Node.js project setup with ES modules
-- 🔧 Development scripts for easy iteration
-- ✅ Input validation with Zod
-- 📖 Comprehensive documentation and examples
-
 ## Prerequisites
 
 - Node.js 18+ (recommended: latest LTS)
@@ -178,7 +168,22 @@ To integrate your MCP server with Claude Desktop, add this configuration to your
 ```json
 {
   "mcpServers": {
-    "typescript-boilerplate": {
+    "tsMCP": {
+      "command": "node",
+      "args": ["/path/to/your/project/build/server.js"]
+    }
+  }
+}
+```
+
+### Cursor
+
+To integrate your MCP server with Cursor, add this configuration to your MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "tsMCP": {
       "command": "node",
       "args": ["/path/to/your/project/build/server.js"]
     }
