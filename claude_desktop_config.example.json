@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "typescript-boilerplate": {
+      "command": "node",
+      "args": ["/absolute/path/to/your/project/build/server.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
