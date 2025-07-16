@@ -11,7 +11,7 @@ A complete boilerplate for creating Model Context Protocol (MCP) servers and cli
 
 1. **Clone or download this boilerplate**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/RishabhKodes/tsMCP.git
    cd tsMCP
    ```
 
